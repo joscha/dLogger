@@ -24,10 +24,13 @@ The use of spreadsheets has also one major advantage: if you open the spreadshee
 * If it is "full", then a new spreadsheet gets created and is used as the current target spreadsheet from then on.
 
 ## How to use
+### Set up the library
 1. Get the contents of [lib/dLogger.js](https://raw.github.com/joscha/dLogger/master/lib/dLogger.js) and put them in a new GAS project.
 2. Go to `Manage Versions` and save a new version
 3. Go to `Project properties`, set the `Time zone` you want the log messages being dated in and copy the `Project key`.
-4. Go to your project and add the copied `Project key` under `Resources -> Manage libraries`.
+
+### Set up your project
+4. Go to your project where you want to **use** the logger (in most cases this is *NOT* the library project) and add the copied `Project key` under `Resources -> Manage libraries`.
 5. Have a look at the example below on how to use it or check out the [latest API Docs](https://script.google.com/macros/library/versions/d/MsqzXdC6h_VGFU8igz7L7qRjq1OGlSjhT).
 
 
@@ -38,7 +41,8 @@ For an easy start or just to check out how and if it works for you, you can use 
 Please note, that this is **NOT** the recommended way, because theoretically, with some effort, this would allow me or an attacker of my account to alter all the log data in the spreadsheets, so if you are concerned about your data, set up your own logger with the steps provided above. Only that way you have full governance with no risk.
 
 ## Example
-1. Follow steps 1 to 4 of 'How to use' (see above)
+1. Follow the steps of 'How to use' (see above)
+2. Copy the code below into the Code.gs file of the project where you added the logger as a library.
 2. Run `setup` from within the Google Apps Script editor, this initialzes a spreadsheet for the key `myProject` and sets up a trigger being run every minute. You can see the created spreadsheet in your Google Drive and if your email quota for the day hasn't been used up you'll also receive an email.
 3. Run `fill` as often as needed until the initial spreadsheet is 'full', e.g. 80% of the allowed cells are filled and a new spreadsheet gets created.
 

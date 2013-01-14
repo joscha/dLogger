@@ -35,10 +35,10 @@ For an easy start or just to check out how and if it works for you, you can use 
 
 > MsqzXdC6h_VGFU8igz7L7qRjq1OGlSjhT
 
-Please not, that this is **NOT** the recommended way, because theoretically, with some effort, this would allow me or an attacker of my account to alter all the log data in the spreadsheets, so if you are concerned about your data, set up your own logger with the steps provided above. Only that way you have full governance with no risk.
+Please note, that this is **NOT** the recommended way, because theoretically, with some effort, this would allow me or an attacker of my account to alter all the log data in the spreadsheets, so if you are concerned about your data, set up your own logger with the steps provided above. Only that way you have full governance with no risk.
 
 ## Example
-```
+```javascript
 var KEY = 'myProject';
 
 /**

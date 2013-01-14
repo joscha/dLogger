@@ -10,9 +10,12 @@ One way to work around this is sending exceptions via email, however the mail qu
 
 The other approach is to log into a spreadsheet shared to write to for anybody, e.g. `SpreadsheetApp.openById('XXX').addRow(…)` however the only problem with that is that for lots of log output, the [limits to spreadsheets imposed by Google](http://support.google.com/drive/bin/answer.py?hl=en&answer=2505921) are hit quite rapidly, meaning you constantly need to watch out for the limits and then clear your spreadsheet and/or use a new one.
 
-If you don't, exceptions are thrown, possibly getting sent to your users via email. You don't want that.
+Otherwise, exceptions like
+> This document has reached the cell per spreadsheet limit. Create a new spreadsheet to continue working, as you may not be able to add any more rows or columns. [...]
 
-This project helps you with this - it basically provides you with a simple log method paired with the ability to detect when a spreadsheet is close to hitting the limits and thus automatically rolling the current logs over to a newly created spreadsheet, seamlessly allowing you to produce virtually infinite log output into spreadsheets.
+are thrown, possibly getting sent to your users via email. You don't want that.
+
+This project helps you with this - **it provides you with a simple log method paired with the ability to automatically detect when a spreadsheet is close to hitting the limits and thus automatically rolling the current logs over to a newly created spreadsheet, seamlessly allowing you to produce virtually infinite log output into spreadsheets**.
 
 The use of spreadsheets has also one major advantage: if you open the spreadsheet where the events get logged to in your Google Docs account, you get a live impression of what's happening throughout your whole userbase.
 

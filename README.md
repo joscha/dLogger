@@ -103,6 +103,10 @@ function checkQuota() {
 }
 ```
 
+Your spreadsheet should look something like this:
+
+![image](https://raw.github.com/joscha/dLogger/gh-pages/images/logDoc.png)
+
 ## Version history
 _2013-01-14_ - **0.1**: Initial version
 

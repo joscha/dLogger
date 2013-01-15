@@ -109,6 +109,7 @@ Your spreadsheet should look something like this:
 
 ## Version history
 _2013-01-15_ - **0.2**: Fixes and doc updates
+
 _2013-01-14_ - **0.1**: Initial version
 
 ## Building from source

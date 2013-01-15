@@ -55,7 +55,8 @@ var KEY = 'myProject';
 * You might need to invoke this method multiple times from the script editor
 * to hit the limits, as there is a maximum execution time and the spreadsheet limits aren't hit in that time.
 *
-* This would be the 
+* This method would usually not be run from within the same script as your keepAlive gets triggered and setup gets called
+* It's just for exemplifying the usage - this part would normally be in the Script app that uses the logger as a library. 
 */
 function fill() {
   // Generate a huge log message

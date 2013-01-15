@@ -116,4 +116,4 @@ _2013-01-14_ - **0.1**: Initial version
 You can build via `cake build` or use `cake watch` for continuous builds during development.
 
 ## License
-MIT License, see LICENSE.md
+MIT License, see [LICENSE.md](https://raw.github.com/joscha/dLogger/master/LICENSE.md)

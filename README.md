@@ -31,17 +31,14 @@ The use of spreadsheets has also one major advantage: if you open the spreadshee
 1. Get the contents of [lib/dLogger.js](https://raw.github.com/joscha/dLogger/master/lib/dLogger.js) and put them in a new GAS project.
 2. Go to `Manage Versions` and save a new version
 3. Go to `Project properties`, set the `Time zone` you want the log messages being dated in and copy the `Project key`.
+4. Click on the `Share` button and make it writable for the world:   
+![image](https://raw.github.com/joscha/dLogger/gh-pages/images/shareLibrary.png)  
+This is needed, so that users logging from a WebApp executed under their user have access to the library. Therefore it is vital, that you keep your project key secret at all times, as otherwise your users may tamper with your logging.
 
 ### Set up your project
 4. Go to your project where you want to **use** the logger (in most cases this is *NOT* the library project) and add the copied `Project key` under `Resources -> Manage libraries`.
 5. Have a look at the example below on how to use it or check out the [latest API Docs](https://script.google.com/macros/library/versions/d/MsqzXdC6h_VGFU8igz7L7qRjq1OGlSjhT).
 
-
-For an easy start or just to check out how and if it works for you, you can use a predefined library run by me with the `Project key`:
-
-> MsqzXdC6h_VGFU8igz7L7qRjq1OGlSjhT
-
-Please note, that this is **NOT** the recommended way, because theoretically, with some effort, this would allow me or an attacker of my account to alter all the log data in the spreadsheets, so if you are concerned about your data, set up your own logger with the steps provided above. Only that way you have full governance with no risk.
 
 ## Example
 1. Follow the steps of 'How to use' (see above)
@@ -111,6 +108,7 @@ Your spreadsheet should look something like this:
 ![image](https://raw.github.com/joscha/dLogger/gh-pages/images/logDoc.png)
 
 ## Version history
+_2013-01-15_ - **0.2**: Fixes and doc updates
 _2013-01-14_ - **0.1**: Initial version
 
 ## Building from source

@@ -58,7 +58,6 @@ l = null
 
       result = db.query
         key:    key
-        owner:  @getEmail_()
 
       result = result.sortBy 'created', db.DESCENDING
 
@@ -69,7 +68,6 @@ l = null
       now = new Date()
       ob = 
         key: key
-        owner: @getEmail_()
         created: now.getTime()
 
       s = SpreadsheetApp.create "GAS: DistributedLogger: #{key} (created #{now.toUTCString()})"
@@ -108,7 +106,7 @@ l = null
           if key
             keys = [key]
           else
-            result = @getDb_().query owner: @getEmail_()
+            result = @getDb_().query({})
             obj = {}
             while result.hasNext()
               obj[result.next().key] = true

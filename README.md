@@ -108,6 +108,10 @@ Your spreadsheet should look something like this:
 
 ![image](https://raw.github.com/joscha/dLogger/gh-pages/images/logDoc.png)
 
+### Tips & tricks
+If you always log the same amount of fields, e.g. you pass an array of length X to `DistributedLogger.log` then you can safely remove all columns **greater** than `X+1` (+1 because the log date gets added as first column).
+Per default the spreadsheet always goes up to column `T`, hence wasting unnecessary space with empty cells if you never use them.
+
 ## Version history
 _2013-01-15_ - **0.2**: Fixes and doc updates
 

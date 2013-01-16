@@ -41,7 +41,7 @@ This is needed, so that users logging from a WebApp executed under their user ha
 
 
 ## Example
-1. Follow the steps of 'How to use' (see above)
+1. Follow the steps of the section 'How to use' ([see above](#how-to-use))
 2. Copy the code below into the Code.gs file of the project where you added the logger as a library.
 2. Run `setup` from within the Google Apps Script editor, this initialzes a spreadsheet for the key `myProject` and sets up a trigger being run every minute. You can see the created spreadsheet in your Google Drive and if your email quota for the day hasn't been used up you'll also receive an email.
 3. Run `fill` as often as needed until the initial spreadsheet is 'full', e.g. 80% of the allowed cells are filled and a new spreadsheet gets created.
